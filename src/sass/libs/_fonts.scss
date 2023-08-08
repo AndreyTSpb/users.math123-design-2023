@@ -1,0 +1,44 @@
+/* Обычный */
+@font-face {
+	font-family: 'Panton';
+	font-style: normal;
+	font-weight: normal;
+	src:url('../fonts/Panton.otf') format('opentype');
+}
+
+/* Жирный */
+@font-face {
+	font-family: 'Panton';
+	font-style: normal;
+	font-weight: bold;
+	src:url('../fonts/Panton_Bold.otf') format('opentype');
+}
+
+/* Курсив */
+@font-face {
+	font-family: 'Panton';
+	font-style: italic;
+	font-weight: normal;
+	src:url('../fonts/Panton_Regular_Italic.otf') format('opentype');
+}
+
+/* Жирный курсив */
+@font-face {
+	font-family: 'Panton';
+	font-style: italic;
+	font-weight: bold;
+	src:url('../fonts/Panton_Bold_Italic.otf') format('opentype');
+}
+/* Жирный курсив */
+@font-face {
+	font-family: 'Panton';
+	font-style: normal;
+	font-weight: 900;
+	src:url('../fonts/Panton_Black.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Malina';
+	font-style: normal;
+	src:url('../fonts/Malina.otf') format('opentype');
+}

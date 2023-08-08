@@ -1,0 +1,67 @@
+.maps{
+    width: 100%;
+    margin-top: 0px !important;
+    //min-height: 100vh;
+    background-color: $ligth-yellow;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-image: url('../img/bg-map.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    &-place{
+        max-width: 767px;
+        height: 458px;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: solid 4px #b41e8e;
+        background-color: #ffffff;
+    }
+    &-new-place{
+        width: 766px;
+        height: 105px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border-radius: 51px;
+        box-shadow: 0.2px 2px 7.8px 1.2px rgba(35, 31, 32, 0.34);
+        border: solid 4px #b41e8e;
+        background-color: #d1d6da;
+        @media only screen and (max-width: 787px){
+            display: none;
+        }
+        h4{
+            font-family: 'Roboto';
+            font-size: 22px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.46;
+            letter-spacing: normal;
+            color: #000005 !important;
+        }
+        &-form{
+            form{
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                input,.select-pink{
+                    width: 192px;
+                    font-size: 19px;
+                }
+                select{
+                    font-size: 19px;
+                    padding: 0 38px 0px 20px;
+                }
+                button{
+                    width: 192px;
+                }
+            }
+        }
+    }
+    &-block{
+        &>ymaps{
+            border-radius: 25px;
+            overflow: hidden;
+        }
+    }
+}

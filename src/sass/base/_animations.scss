@@ -1,0 +1,87 @@
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    to{
+       transform: scalerotate(360deg);
+    }
+}
+
+@keyframes showBlockMenu {
+   from {
+      left: -320px;
+    }
+    50%{
+      left: -160px;
+    }
+    to {
+      left: 0;
+    }
+}
+@keyframes hideBlockMenu {
+  from {
+     left: 0;
+   }
+   50%{
+     left: -160px;
+   }
+   to {
+     left: -320px;
+   }
+}
+
+@keyframes showArrowOrangeDarts {
+  from {
+      right: -126px;
+      top: -72px;
+   }
+   to {
+      right: -25px;
+      top: 0px;
+   }
+}
+@keyframes showArrowGreenDarts {
+  from {
+      left: 60px;
+      bottom: -170px;
+   }
+   to {
+      left: 70px;
+      bottom: 9px;
+   }
+}
+@keyframes showArrowGreyDarts {
+  from {
+      right: -120px;
+      bottom: 50px;
+   }
+   to {
+      right: -42px;
+      bottom: 98px;
+   }
+}
+@keyframes showArrowBlueDarts {
+  from {
+    left: -90px;
+    top: -120px;
+   }
+   to {
+      left: -10px;
+      top: -30px;
+   }
+}
+@keyframes showArrowRedDarts {
+  from {
+      left: -157px;
+      bottom: 95px;
+   }
+   to {
+      //left: -84px;
+      //bottom: 52px;
+      left: -65px;
+      bottom: 125px;
+   }
+}

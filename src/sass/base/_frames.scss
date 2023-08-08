@@ -1,0 +1,43 @@
+.yelow-frame{
+    width: 171px;
+    height: 171px;
+    box-shadow: 1.4px 5.9px 11.3px 1.7px rgba(24, 23, 28, 0.39);
+    border: solid 13px $yellow;
+    &.radius{
+        border-radius: 100%;
+    }
+}
+
+.purple-frame{
+    width: 171px;
+    height: 170px;
+    border: solid 13px $purple;
+    &.radius{
+        border-radius: 100%;
+    }
+}
+
+.green-frame{
+    width: 171px;
+    height: 170px;
+    border: solid 10px #00ab97;
+    &.radius{
+        border-radius: 100%;
+    }
+}
+.orange-frame{
+    width: 171px;
+    height: 170px;
+    border: solid 10px $orang-two;
+    &.radius{
+        border-radius: 100%;
+    }
+}
+.blue-frame{
+    width: 171px;
+    height: 170px;
+    border: solid 10px $blue;
+    &.radius{
+        border-radius: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+.category-events{
+    .accordion{
+        margin-top: 50px;
+        .card-base-anonce{
+            margin-top: 50px;
+        }
+
+        .math{
+            .card-base-anonce{
+                h4{
+                    color: $purple !important;
+                }
+                &-body{
+                    img{
+                        border: 4px solid $purple;
+                    }
+                }
+            }
+        }
+        .phyth{
+            .card-base-anonce{
+                h4{
+                    color: $green !important;
+                }
+                &-body{
+                    img{
+                        border: 4px solid $green;
+                    }
+                }
+            }
+        }
+        .prog{
+            .card-base-anonce{
+                h4{
+                    color: $orang-two !important;
+                }
+                &-body{
+                    img{
+                        border: 4px solid $orang-two;
+                    }
+                }
+            }
+        }
+        .biznes{
+            .card-base-anonce{
+                h4{
+                    color: $blue !important;
+                }
+                &-body{
+                    img{
+                        border: 4px solid $blue;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.wpcf7{
+    width: 600px;
+    margin: 0 auto;
+    form{
+        width: 100%;
+        label{
+            //display: grid;
+            //grid-template-columns: 30% 70%;
+            //justify-content: space-between;
+            text-align: left;
+            font-size: 22px;
+            input{
+                width: 350px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .wpcf7-textarea{
+            border-radius: 18px;
+            box-shadow: inset 0.3px 3px 4.9px 0.1px rgba(24, 23, 28, 0.29);
+            border: solid 2px #dad7d6;
+            display: block;
+            width: 100%;
+        }
+        p{
+            //text-align: center;
+        }
+        input[type='submit']{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+.wp-block-columns{
+    margin-top: 50px;
+}
+.map{
+    border-radius: 30px;
+    border: solid 4px #b41e8e;
+    background-color: #ffffff;
+    &>ymaps{
+        border-radius: 25px;
+        overflow: hidden;
+    }
+}

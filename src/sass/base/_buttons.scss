@@ -1,0 +1,144 @@
+.btn{
+    border: none;
+    border-radius: 6px;
+    border: solid 4px $light-purple;
+    padding: 10px 18px 8px;
+    border-radius: 10px;
+    background-color: $light-purple;
+    color: #FFFFFF;
+    a{
+        text-decoration: none;
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color:#ffffff;
+        color: $light-purple;
+    }
+    &.shadow{
+        box-shadow: 0.4px 4px 10px 0 rgba(0, 0, 0, 0.53) !important;
+    }
+    &.yellow{
+        box-shadow: 0.6px 6px 5px 0 rgba(35, 31, 32, 0.33);
+        background-color: $yellow;
+        border: solid 4px $yellow;
+        color: $light-purple;
+        &.text-green{
+            color: $green;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color:#ffffff;
+            color: $light-purple;
+            border: solid 4px #ffffff;
+        }
+    }
+}
+.btn-subject{
+    width: 200px;
+    height: 36px;
+    padding: 2px 8px 7px;
+    border-radius: 16px;
+    box-shadow: 0.6px 6px 5px 0 rgba(35, 31, 32, 0.33);
+    background-color: $grey;
+    border:none;
+    font-size: 18px;
+    font-weight: 900;
+    color: $light-purple;
+    text-transform: uppercase;
+    border: solid 4px #b41e8e;
+    a{
+        text-decoration: none;
+    }
+    
+    &:hover{
+        background-color: #ffffff;
+        text-decoration: none;
+    }
+    &.math{
+        &:hover{
+            background-color: $yellow;
+            text-decoration: none;
+        }
+    }
+    &.phyth{
+        &:hover{
+            background-color: $green;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &.prog{
+        &:hover{
+            background-color: $orang;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &.biznes{
+        &:hover{
+            background-color: $blue;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &.yellow{
+        background-color: $yellow;
+        padding: 2px 8px 3px;
+    }
+}
+.btn-sub{
+    min-width: 192px;
+    height: 36px;
+    padding: 8px 17px 10px 17px;
+    border: none;
+    border-radius: 21.2px;
+    //box-shadow: inset 0.6px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
+    background-color: $light-purple;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-decoration: none !important;
+    
+    
+    &.record{
+        box-shadow: 0.6px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
+        background-color: #FFFFFF;
+        color: $base-color;
+        text-decoration: none !important;
+    }
+    &.green{
+        background-color: $green;
+        text-decoration: none !important;
+    }
+    &.white{
+        background-color: #ffffff;
+        color: $green;
+        a{
+            text-decoration: none !important;
+    
+        }
+    }
+    &.orang{
+        background-color: $orang;
+        color: #ffffff;
+        text-decoration: none !important;
+    }
+    &.blue{
+        background-color: $blue;
+        color: #FFFFFF;
+        text-decoration: none !important;
+    }
+    &.purple{
+        background-color: $purple;
+        color: #FFFFFF;
+        text-decoration: none !important;
+    }
+    &:hover{
+        box-shadow: inset 0.6px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
+    }
+}

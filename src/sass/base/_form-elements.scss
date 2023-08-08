@@ -1,0 +1,284 @@
+input{
+    width: 290px;
+    height: 44px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 18px;
+    box-shadow: inset 0.3px 3px 4.9px 0.1px rgba(24, 23, 28, 0.29);
+    border: solid 2px $grey;
+    background-color: #ffffff;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: normal;
+    text-align: center;
+    //color: #939598;
+    &.radius{
+        box-shadow: none;
+        border: solid 2px $purple;
+        border-radius: 20px;
+        height: 40px;
+    }
+}
+
+
+//Базовый селек
+select{
+    width: 290px;
+    height: 44px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
+    border: solid 2px $grey;
+    background-color: #ffffff;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+//стилизуем селект с применением дополнительной обертки 
+.select{
+    cursor: pointer;
+    width: 290px;
+    height: 44px;
+    margin: 0 auto;
+
+    border: solid 2px #bcbec0;
+    border-radius: 10px;
+    box-shadow: inset 0px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
+    background-color: #ffffff;
+
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: normal;
+    text-align: left;
+    color: $grey;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
+    display: grid;
+    grid-template-areas: "select";
+
+    &::after {
+        content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+        width: 43px;
+        height: 40px;
+        background-color: $grey;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        //clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+        justify-self: end;
+        padding-top: 12px;
+        grid-area: select;
+    }
+    &:hover::after{
+        background-color: $purple;
+    }
+
+    select{
+        //сброс базового селектора
+        // A reset of styles, including removing the default dropdown arrow
+        appearance: none;
+        // Additional resets for further consistency
+        background-color: transparent;
+        margin: 0;
+        width: 100%;
+        height: 90%;
+        border: none;
+        border-radius: 9px;
+        padding: 0px 20px 5px 20px;
+        //padding: 0 1em 0 0;
+        box-shadow: none;
+        outline: none;
+        grid-area: select;
+
+        // Stack above custom arrow
+        z-index: 1;
+        cursor: pointer;
+        
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        font-size: inherit;
+        font-weight: inherit;
+        font-stretch: inherit;
+        font-style: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        text-align: inherit;
+    }
+}
+
+// Розовый селектор
+.select-pink{
+    cursor: pointer;
+    width: 257px;
+    height: 44px;
+    //margin: 0 10px 2px 0;
+    //padding: 1px 0 0 38px;
+    border-radius: 22px;
+    //box-shadow: inset 0px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
+    box-shadow: none;
+    border: solid 4px $purple;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-areas: "select";
+
+    &::after {
+        content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+        width: 36px;
+        height: 36px;
+        background-color: $purple;
+        //border-bottom-right-radius: 8px;
+        //border-top-right-radius: 8px;
+        //clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+        justify-self: end;
+        padding-top: 10px;
+        grid-area: select;
+        border-radius: 20px;
+    }
+    &:hover::after{
+        background-color: $grey;
+    }
+
+    select{
+        //сброс базового селектора
+        // A reset of styles, including removing the default dropdown arrow
+        appearance: none;
+        // Additional resets for further consistency
+        background-color: transparent;
+        margin: 0;
+        width: 100%;
+        height: 90%;
+        border: none;
+        border-radius: 9px;
+        padding: 0px 38px 5px 20px;
+        //padding: 0 1em 0 0;
+        box-shadow: none;
+        outline: none;
+        grid-area: select;
+
+        // Stack above custom arrow
+        z-index: 1;
+        cursor: pointer;
+        text-overflow: clip;
+    }
+}
+
+.user-icon{
+    cursor: pointer;
+    width: 290px;
+    height: 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "input";
+    
+    border-radius: 20px;
+    box-shadow: inset 0.3px 3px 4.9px 0.1px rgba(24, 23, 28, 0.29);
+    border: solid 2px $grey;
+    background-color: #ffffff;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: normal;
+    text-align: center;
+
+    &::after {
+        content: url('../img/user.png');
+        color: #777;
+
+        width: 36px;
+        height: 36px;
+        //background-color: $purple;
+        //border-bottom-right-radius: 8px;
+        //border-top-right-radius: 8px;
+        //clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+        justify-self: start;
+        padding-top: 10px;
+        grid-area: input;
+        //border-radius: 20px;
+        border-right: 1px solid $grey;
+    }
+    input{
+        background-color: transparent;
+        margin: 0;
+        width: 100%;
+        height: 90%;
+        border: none;
+        border-radius: 9px;
+        padding: 0px 38px 5px 20px;
+        //padding: 0 1em 0 0;
+        box-shadow: none;
+        outline: none;
+        grid-area: input;
+
+        // Stack above custom arrow
+        z-index: 1;
+        cursor: pointer;
+        text-overflow: clip;
+    }
+}
+
+.lock-icon{
+    cursor: pointer;
+    width: 290px;
+    height: 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "input";
+    
+    border-radius: 20px;
+    box-shadow: inset 0.3px 3px 4.9px 0.1px rgba(24, 23, 28, 0.29);
+    border: solid 2px $grey;
+    background-color: #ffffff;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: normal;
+    text-align: center;
+
+    &::after {
+        content: url('../img/lock.png');
+     
+        width: 36px;
+        height: 36px;
+
+        justify-self: start;
+        padding-top: 10px;
+        grid-area: input;
+        //border-radius: 20px;
+        border-right: 1px solid $grey;
+    }
+    input{
+        background-color: transparent;
+        margin: 0;
+        width: 100%;
+        height: 90%;
+        border: none;
+        border-radius: 9px;
+        padding: 0px 38px 5px 20px;
+        //padding: 0 1em 0 0;
+        box-shadow: none;
+        outline: none;
+        grid-area: input;
+
+        // Stack above custom arrow
+        z-index: 1;
+        cursor: pointer;
+        text-overflow: clip;
+    }
+}

@@ -1,0 +1,116 @@
+.our-teacher{
+    @media only screen and (max-width: 787px){
+        background-color: $purple;
+        h2{
+            color: #FFFFFF !important;
+        }
+    }
+    &__button{
+        display: block;
+        margin: 0 auto;
+        margin-top: auto;
+    }
+    .slick-dots{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        li[class="slick-active"] button {
+            background: $green;
+        }
+        button {
+            background: #b41e8e; // цвет фона
+            border: none; // без рамки
+            border-radius: 50%; // радиус закругления
+            height: 15px; // высота точки
+            width: 15px; // ширина точки
+            margin: 5px; // отступы между точками
+            outline: none; // убираем обводку
+            color: rgba(#FFFFFF, 0);
+        }
+    }
+    &-item{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        min-width: 300px;
+        //max-height: 445px;
+        padding: 25px 15px 25px 15px;
+        @media only screen and (max-width: 787px){
+            height: 475px;
+        }
+        @media only screen and (max-width: 475px){
+            height: 495px;
+            min-width: 284px;
+        }
+        @media only screen and (max-width: 375px){
+            height: 510px;
+            min-width: 235px;
+            padding: 5px;
+        }
+        @media only screen and (max-width: 345px){
+            height: 520px;
+            min-width: 255px;
+        }
+        &-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            @media only screen and (max-width: 787px){
+                justify-content: space-around;
+            }
+            align-content: stretch;
+            height: 100%;
+            padding: 5px;
+            img{
+                margin: 0 auto;
+                width: 222px;
+                height: 228px;
+                @media only screen and (max-width: 787px){
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+        &-name{
+            margin-top: 40px;
+            font-family: 'Roboto';
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #58595b;
+            @media only screen and (max-width: 787px){
+                color: #ffffff;
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        }
+        &-info{
+            font-family: 'Roboto';
+            font-size: 23px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #58595b;
+            margin-top: 15px;
+            padding-top: 20px;
+            @media only screen and (max-width: 787px){
+                color: #ffffff;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+    .slick-initialized .slick-slide{
+        display: block;
+    }
+}

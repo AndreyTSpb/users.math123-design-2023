@@ -1,0 +1,488 @@
+.sub-subject-page{
+    padding-bottom: 30px;
+    &__card-price{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 303px;
+        //padding: 0 0 0 23px;
+        border-radius: 30px;
+        border: solid 4px #b80e80;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 30px;
+        @media only screen and (max-width: 769px){
+            height: auto;
+        }
+        @media only screen and (max-width: 600px){
+            flex-direction: column;
+            width: 100%;
+        }
+        .block-price{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            width: 334px;
+            height: 303px;
+            padding: 10px 30px;
+            border: solid 1px #dadada;
+            background-color: #e3e3e3;
+            @media only screen and (max-width: 769px){
+                height: auto;
+            }
+            @media only screen and (max-width: 600px){
+                width: 100%;
+            }
+            &__desc{
+                font-family: "Panton";
+                font-size: 16px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #000;
+            }
+            &__year{
+                font-family: "Panton";
+                font-size: 22px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2;
+                letter-spacing: normal;
+                text-align: center;
+                color: #b80e80;
+            }
+            &__price{
+                font-family: "Roboto";
+                font-size: 36px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.62;
+                letter-spacing: normal;
+                text-align: left;
+                color: #b80e80;
+            }
+        }
+        .block-info{
+            padding: 50px 20px;
+            p{
+                font-family: 'Panton';
+                font-size: 18px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.16;
+                letter-spacing: normal;
+                text-align: left;
+                color: #1d1d1b;
+                b, strong{
+                    text-transform: uppercase;
+                    color: #b80e80;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    &__contant{
+        margin-top: 45px;
+        h2,h3,h4{
+            color: #878787 !important;
+        }
+        h2{
+            font-size: 36px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 25px;
+
+        }
+        P{
+            font-family: 'Panton';
+            font-size: 20px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.55px;
+            text-align: left;
+            color: #030303;
+            b, strong{
+                color: #b80e80;
+                font-size: 28px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+        ul{
+            li {
+                    list-style-type: none; /* Прячем исходные маркеры */
+                    font-size: 22px;
+                    font-family: 'Panton';
+                    font-weight: 700;
+                    &:before {
+                        color: #b80e80;; /* Цвет маркера */
+                        content: "\2022 "; /* Сам маркер */
+                        padding-right: 10px; /* Расстояние от маркера до текста */
+                        font-size: 28px;
+                    }
+               }
+        }
+        .wp-block-columns{
+            display: flex;
+            justify-content: space-between;
+        }
+        .wp-block-image:not(.no-class){
+                img{
+                    width: 392px;
+                    height: 280px;
+                    box-shadow: 0 0 0 12px #b80e80, 0 0 0 3px #fff;
+                    border-radius: 10px;
+                    @media only screen and (max-width: 425px){
+                        display: block;
+                        margin: 0 auto;
+                        width: 300px;
+                        height: 240px;
+                    }
+                }
+        }
+        .table-subject,.wp-block-table{
+            @media only screen and (max-width: 425px){
+                        display: none;
+            }
+            table{
+                width: 100%;
+                border-radius: 30px;
+                //border: solid 3px #b80e80;
+                border-radius: 20px;
+                border-radius: 10px;
+                //display: block;
+            }
+            tr:not(:first-child):not(:last-child){
+                td{
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    font-family: "Roboto";
+                    font-size: 35px;
+                    font-weight: 900;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #010101;
+                    @media only screen and (max-width: 768px){
+                        font-size: 28px;
+                    }
+                }
+                td:first-child{
+                    position: relative;
+                    font-family: "Roboto";
+                    font-size: 30px;
+                    font-weight: 900;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.89;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #b80e80;
+                    @media only screen and (max-width: 768px){
+                        font-size: 25px;
+                    }
+                }
+                td:not(:first-child){
+                    position: relative;
+                    &::before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 6px;
+                        height: 70%;
+                        background-color: #b80e80;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+                td:last-child{
+                    // &::after{
+                    //     content: '';
+                    //     display: block;
+                    //     position: absolute;
+                    //     width: 1px;
+                    //     height: 100%;
+                    //     background-color: #b80e80;
+                    //     top: 50%;
+                    //     right: 0;
+                    //     transform: translateY(-50%);
+                    // }
+                }
+            }
+            tr:first-child{
+                td{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-left: none;
+                    background-color: #b80e80;
+                    font-family: Roboto;
+                    font-size: 26px;
+                    font-weight: 900;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: 0.74px;
+                    text-align: center;
+                    color: #fff;
+                    @media only screen and (max-width: 768px){
+                        font-size: 22px;
+                    }
+                    &:first-child{
+                        border-left: none;
+                        border-top-left-radius: 20px;
+                    }
+                    &:last-child{
+                        border-left: none;
+                        border-top-right-radius: 20px;
+                    }
+                    span{
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 900;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: 0.56px;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+            }
+            tr:last-child{
+                td{
+                    background-color: #e3e3e3;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 0.89;
+                    letter-spacing: normal;
+                    text-align: center;
+                    font-size: 30px;
+                    color: #b80e80;
+                    height: 20px;
+                }
+                td:first-child{
+                    border-left: none;
+                    border-bottom-left-radius: 20px;
+                }
+                td:last-child{
+                    border-bottom-right-radius: 20px;
+                }
+                
+            }
+        }
+    }
+}
+.prog .sub-subject-page{
+    &__card-price{
+        border: solid 4px $orang;
+        .block-price{
+            &__year{
+                color: $orang;
+            }
+            &__price{
+                color: $orang;
+            }
+            .btn-sub{
+                background-color: $orang;
+            }
+        }
+        .block-info{
+            b, strong{
+                color: $orang;
+            }
+        }
+    }
+    &__contant{
+        .btn-sub{
+            background-color: $orang;
+        }
+        P{
+            b, strong{
+                color: $orang;
+            }
+        }
+        ul{
+            li:before {
+                color: $orang;
+            }
+        }
+        .wp-block-columns{
+            display: flex;
+            justify-content: space-between;
+        }
+        .wp-block-image:not(.no-class){
+                img{
+                    box-shadow: 0 0 0 12px $orang, 0 0 0 3px #fff;
+                }
+        }
+        .wp-block-table{
+            tr:not(:first-child):not(:last-child){
+                td:first-child{
+                    color: $orang;
+                }
+                td:not(:first-child){
+                    &::before{
+                        background-color: $orang;
+                    }
+                }
+            }
+            tr:first-child{
+                td{
+                    background-color: $orang;
+                }
+            }
+            tr:last-child{
+                td{
+                    color: $orang;
+                }
+            }
+        }
+    }
+}
+.phyth .sub-subject-page{
+    &__card-price{
+        border: solid 4px $green;
+        .block-price{
+            &__year{
+                color: $green;
+            }
+            &__price{
+                color: $green;
+            }
+            .btn-sub{
+                background-color: $green;
+            }
+        }
+        .block-info{
+            b, strong{
+                color: $green;
+            }
+        }
+    }
+    &__contant{
+        .btn-sub{
+            background-color: $green;
+        }
+        P{
+            b, strong{
+                color: $green;
+            }
+        }
+        ul{
+            li:before {
+                color: $green;
+            }
+        }
+        .wp-block-image:not(.no-class){
+                img{
+                    box-shadow: 0 0 0 12px $green, 0 0 0 3px #fff;
+                }
+        }
+        .wp-block-table{
+            tr:not(:first-child):not(:last-child){
+                td:first-child{
+                    color: $green;
+                }
+                td:not(:first-child){
+                    &::before{
+                        background-color: $green;
+                    }
+                }
+            }
+            tr:first-child{
+                td{
+                    background-color: $green;
+                }
+            }
+            tr:last-child{
+                td{
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+.biznes .sub-subject-page{
+    &__card-price{
+        border: solid 4px $blue;
+        .block-price{
+            &__year{
+                color: $blue;
+            }
+            &__price{
+                color: $blue;
+            }
+            .btn-sub{
+                background-color: $blue;
+            }
+        }
+        .block-info{
+            b, strong{
+                color: $blue;
+            }
+        }
+    }
+    &__contant{
+        .btn-sub{
+            background-color: $blue;
+        }
+        P{
+            b, strong{
+                color: $blue;
+            }
+        }
+        ul{
+            li:before {
+                color: $blue;
+            }
+        }
+        .wp-block-image:not(.no-class){
+                img{
+                    box-shadow: 0 0 0 12px $blue, 0 0 0 3px #fff;
+                }
+        }
+        .wp-block-table{
+            tr:not(:first-child):not(:last-child){
+                td:first-child{
+                    color: $blue;
+                }
+                td:not(:first-child){
+                    &::before{
+                        background-color: $blue;
+                    }
+                }
+            }
+            tr:first-child{
+                td{
+                    background-color: $blue;
+                }
+            }
+            tr:last-child{
+                td{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+/*Показывать блок в зависимости от предмета*/

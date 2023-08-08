@@ -1,0 +1,121 @@
+.slick-slider{
+
+}
+.slick-initialized .slick-slide{
+    display: flex;
+}
+.slick-slider .slick-list, 
+.slick-slider .slick-track{
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+    //стрелка
+    .slick-arrow{
+        position: absolute;
+        top: 50%; // выравнивание по вертикали
+        margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+        z-index: 2; // стрелки сверху картинок
+        font-size: 0; // убираем надпись на дефолтной стрелке
+        width: 30px; // ширина стрелки
+        height: 30px; // высота стрелки
+
+        &.slick-prev{
+            left: 100px; // левая стрелка остается с левой стороны слайдера
+            //position: relative;
+            border: 0;
+            background-color: rgba($green-two, 0);
+            //top: 50%;
+            //transform: translateY(-50%);
+            &:before {
+                content: '';
+            }
+            &:after{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                content: '\00ab';
+                position: absolute; /* Абсолютное позиционирование */
+                //border: 35px solid transparent; 
+                //border-right: 45px solid $purple;
+                font-size: 40px;
+                color: #b80e80;
+                right: 90px;
+                top: -20px;
+                background-color: azure;
+                border-radius: 100%;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                box-shadow: 0.3px 3px 4.9px 0.1px rgba(24, 23, 28, 0.29);
+                padding-bottom: 5px;
+                @media only screen and (max-width: 787px){
+                    //border: 25px solid transparent; 
+                    //border-right: 20px solid #FFFFFF;
+                    left: -90px;
+                    //top: -75px;
+                }
+            }
+        }
+        &.slick-next{
+            right: 100px; // правая стрелка переместилась справа от слайдера
+            border: 0;
+            background-color: rgba($green-two, 0);
+            //top: 50%;
+            //transform: translateY(-50%);
+            &:before {
+                content: '';
+            }
+            &:after{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                content: '\00bb';
+                position: absolute; /* Абсолютное позиционирование */
+                //border: 35px solid transparent; 
+                //border-right: 45px solid $purple;
+                font-size: 40px;
+                color: #b80e80;
+                right: -90px;
+                top: -20px;
+                background-color: azure;
+                border-radius: 100%;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                box-shadow: 0.3px 3px 4.9px 0.1px rgba(24, 23, 28, 0.29);
+                padding-bottom: 5px;
+                
+                @media only screen and (max-width: 787px){
+                    //border: 25px solid transparent; 
+                    //border-left: 20px solid #FFFFFF;
+                    right: -90px;
+                    //top: -75px;
+                }
+            }
+        }
+    }
+    .slick-initialized .slick-slide{
+        display: block;
+    }
+    .slick-dots{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        li[class="slick-active"] button {
+            background: #18abab;
+        }
+        button {
+            background: #b41e8e; // цвет фона
+            border: none; // без рамки
+            border-radius: 50%; // радиус закругления
+            height: 15px; // высота точки
+            width: 15px; // ширина точки
+            margin: 5px; // отступы между точками
+            outline: none; // убираем обводку
+            color: rgba(#FFFFFF, 0);
+        }
+    }

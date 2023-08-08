@@ -1,0 +1,40 @@
+.alert-need-registraton{
+    margin: 20px;
+    .alert-warning {
+        color: $base-grey;
+        background-color: #FFFF;
+        border-color: #fff;
+        .btn{
+            background-color: $base-green;
+            border: solid 4px $base-green;
+            &:hover{
+                background-color: #FFF;
+                color: $base-grey;
+            }
+        }
+    }
+}
+.section-login, .section-rempass, .section-registration{
+    .card{
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+        background-color: #FFF;
+        padding: 20px 20px;
+        border-radius: 10px;
+        border: solid 6px $base-green;
+        .btn{
+            background-color: $base-green;
+            border: solid 4px $base-green;
+            &:hover{
+                background-color: #FFF;
+                color: $base-grey;
+            }
+        }
+        input[type=checkbox]{
+            width: 1rem;
+            height: 1rem;
+        }
+        a{
+            color: $base-green;
+        }
+    }
+}

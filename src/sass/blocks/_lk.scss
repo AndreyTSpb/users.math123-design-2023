@@ -1,0 +1,35 @@
+.section-lk{
+    .card{
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+        background-color: #FFF;
+        padding: 20px 20px;
+        border-radius: 10px;
+        border: solid 6px $base-green;
+        &-header{
+            background-color: #FFF;
+            border-bottom: 1px solid #FFF;
+            &>p{
+                display: none;
+            }
+        }
+    }
+    .btn-flat-purple{
+        background-color: $base-green;
+        border: solid 4px $base-green;
+        &:hover{
+            background-color: #FFF;
+            color: $base-grey;
+        }
+    }
+    .link_download {
+        color: $base-green;
+        overflow: visible;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-transform: lowercase;
+    }
+}

@@ -1,0 +1,167 @@
+.about-page{
+    &-text{
+        margin-top: 50px;
+        p{
+            text-align: center;
+        }
+    }
+    &-img{
+        width: 900px;
+        margin: 0 auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 250px);
+        grid-template-areas: "post-1 post-5 post-3"  
+                             "post-4 post-5 post-9"  
+                             "post-7 post-8 post-9"; 
+        
+        @media only screen and (max-width: 900px){
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 250px;
+            grid-template-areas: "post-1"
+                                 "post-3"  
+                                 "post-4"
+                                 "post-8"
+                                 "post-9"; 
+            justify-content: center;
+            align-items: center;
+        }
+        .post-1 {
+            grid-area: post-1;
+            justify-self: end;
+            @media only screen and (max-width: 900px){
+                justify-self: center;
+            }
+        }
+        .post-2 {           
+            grid-area: post-2;
+        }
+        .post-3 {
+            grid-area: post-3;
+            align-self: flex-end;
+            justify-self: self-start;
+            @media only screen and (max-width: 900px){
+                justify-self: center;
+                align-self: center;
+            }
+        }
+        .post-4 {           
+            grid-area: post-4;
+            align-self: flex-end;
+            justify-self: self-start;
+            @media only screen and (max-width: 900px){
+                justify-self: center;
+                align-self: center;
+                margin-top: 35px;
+            }
+        }
+        .post-5 {
+            grid-area: post-5;
+            position: relative;
+            justify-self: center;
+            align-self: flex-end;
+            padding-bottom: 60px;
+            @media only screen and (max-width: 900px){
+                img{
+                    display: none;
+                }
+            }
+            .arow-red,.arow-green,.arow-grey,.arow-orange,.arow-blue{
+                opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+                transition: 1s; /*Скорость перехода состояния элемента*/
+            }
+            .arow-green{
+                position: absolute;
+                //left: 75px;
+                //bottom: -59px;
+                left: 70px;
+                bottom: 9px;
+                
+            }
+            .arow-red{
+                position: absolute;
+                left: -65px;
+                bottom: 125px;
+            }
+            .arow-blue{
+                position: absolute;
+                left: -10px;
+                top: -30px;
+            }
+            .arow-grey{
+                position: absolute;
+                right: -42px;
+                bottom: 98px;
+            }
+            .arow-orange{
+                position: absolute;
+                right: -25px;
+                top: 0px;
+            }
+            &:hover{
+                .arow-red,.arow-green,.arow-grey,.arow-orange,.arow-blue{
+                    opacity:1;
+                    transition: 1s;
+                }
+                .arow-orange{
+                   animation: showArrowOrangeDarts 1s steps(30, end); 
+                }
+                .arow-green{
+                    animation: showArrowGreenDarts 1s steps(30, end);
+                }
+                .arow-grey{
+                    animation: showArrowGreyDarts 1s steps(30, end);
+                }
+                .arow-blue{
+                    animation: showArrowBlueDarts 1s steps(30, end);
+                }
+                .arow-red{
+                    animation: showArrowRedDarts 1s steps(30, end);
+                }
+            }
+        }
+        .post-6 {           
+            grid-area: post-6;
+        }
+        .post-7 {           
+            grid-area: post-7;
+        }
+        .post-8 {
+            grid-area: post-8;
+            @media only screen and (max-width: 900px){
+                justify-self: center;
+                align-self: center;
+                margin-top: 35px;
+            }
+        }
+        .post-9 {           
+            grid-area: post-9;
+            justify-self: flex-start;
+            align-self: center;
+            @media only screen and (max-width: 900px){
+                justify-self: center;
+                align-self: center;
+                margin-top: 35px;
+            }
+        }
+    }
+    .grid-item{
+        &-text{
+            width: 250px;
+            min-height: 100px;
+            padding: 15px 15px;
+            border-radius: 65.6px;
+            background-color: #dadada;
+            h4{
+                font-size: 18px;
+                color: $purple !important;
+            }
+            p{
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    }
+}

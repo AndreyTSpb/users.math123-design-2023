@@ -1,0 +1,23 @@
+.faq{
+    &-button{
+        margin-top: 30px;
+        text-align: center;
+        a{
+            font-size: 30.5px;
+            font-weight: 300;
+        }
+    }
+    
+    &-text{
+        p{
+            text-align: center;
+            font-size: 30.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $purple;
+        }
+    }
+}

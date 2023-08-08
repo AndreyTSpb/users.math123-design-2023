@@ -1,0 +1,41 @@
+.video{
+    //min-height: 100Vh;
+    margin-top: 40px;
+    &-wrap{
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 768px;
+        @media only screen and (max-width: 769px){
+            width: 100%;
+        }
+    }
+    &-item{
+        width: 768px;
+        //height: 458px;
+        margin: 0 auto;
+        border-radius: 10px;
+        iframe{
+            width: 742px; 
+            //height: 432px;
+        }
+        @media only screen and (max-width: 769px){
+            width: 100%;
+            height: auto;
+            iframe{
+                width: 100%;
+                //height: auto;
+            }
+        }
+    }
+    &__one_item{
+
+        iframe{
+            width: 742px; 
+            height: 432px;
+        }
+        border: solid 13px $purple;
+        &.radius{
+            border-radius: 100%;
+        }
+    }
+}

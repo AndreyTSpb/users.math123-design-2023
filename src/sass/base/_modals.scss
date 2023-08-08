@@ -1,0 +1,56 @@
+.modal{
+    .modal-dialog{
+        .modal-content{
+            border: 3px solid $base-green;
+            border-radius: 0.5rem;
+            background-color: #FFFFFF;
+            .modal-header{
+                border-bottom: none;
+            }
+            .btn-close{
+                border-radius: 100%;
+                border: 2px solid rgb(59, 59, 59);
+                padding: .3rem .3rem;
+                color: $purple;
+            }
+            .modal-body{
+                .table{
+                    thead{
+                        background-color: $base-green;
+                        color: #FFFFFF;
+                        font-family: 'Panton';
+                    }
+                    th,td{
+                        border: 1px solid $base-green;
+                    }
+                }
+            }
+            .modal-footer{
+                border-top: none;
+            }
+        }
+    }
+    &.grey{
+        .modal-content{
+            border: none;
+            border-bottom: 15px $purple solid;
+            border-radius: 0.5rem;
+            box-shadow: 0.1px 1px 4.6px 1.4px rgba(0, 0, 0, 0.79);
+            background-color: #e6e7e8;
+            .modal-header{
+                border-bottom: none;
+            }
+            .btn-close{
+                border-radius: 100%;
+                border: 2px solid rgb(59, 59, 59);
+                padding: .3rem .3rem;
+                color: $purple;
+                width: 1em;
+            }
+            .modal-footer{
+                border-top: none;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.section-my-homework{
+    margin-top: 15px;
+    .my-raiting-block-user{
+        border: solid 6px $base-green;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+        padding: 20px 20px;
+        border-radius: 10px;
+        &-header-stud-name{
+            h4{
+                font-family: 'Panton';
+                color: $base-grey !important;
+                text-align: left;
+            }
+        }
+        &-body{
+            .table{
+                border: 1px solid $base-green;
+            }
+            .table th {
+                background-color: $base-green;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            .table th,td {
+                font-family: 'Panton';
+                border: 1px solid $base-green;
+                a{
+                    color: $base-green;
+                }
+            }
+        }
+
+    }
+}

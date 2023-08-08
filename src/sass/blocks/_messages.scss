@@ -1,0 +1,14 @@
+.section-message{
+    .card{
+        border: 4px solid $base-green;
+        #list-users-mess{
+            .pt-1 > p{
+                text-align: left !important;
+            }
+        }
+        .btn{
+            border: solid 4px $base-green;
+            background-color: $base-green;
+        }
+    }
+}
