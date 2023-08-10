@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     //min-height: 100vh;
-    padding: 57px 16px 57px 16px;
+    padding: 30px 16px 30px 16px;
     background: $base-color;
     //background-image: url('../img/bg-poloski.png');
     background-position: right bottom;
@@ -12,8 +12,8 @@
     }
     &-wrap{
         width: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
+        //padding-left: 25px;
+        //padding-right: 25px;
         margin: 0 auto;
         display: flex;
         justify-content: flex-start;
