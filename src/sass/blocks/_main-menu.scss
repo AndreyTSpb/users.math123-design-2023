@@ -18,7 +18,7 @@
             z-index: 3;
             height: 100vh;
             width: 320px;
-            background-color: $dark-purple;
+            background-color: $base-green;
             padding-top: 20px;
             &-show{
                 display: block;
@@ -35,6 +35,9 @@
                 animation-duration: .5s;
                 animation-timing-function: linear;
                 animation-iteration-count: 1;
+            }
+            .container{
+                margin-top: 35px;
             }
         }
         &-close{
@@ -385,11 +388,20 @@
         &.active{
             display: flex;
             @media only screen and (max-width: 790px){
-                display: none;
+                flex-direction: column;
+                height: 100%;
+                align-items: flex-start;
+                box-shadow: none;
+                background-color: $base-green;
+                justify-content: flex-start;
+                li{
+                    display: block !important;
+                    margin: 5px;
+                }
             }
         }
         @media only screen and (max-width: 790px){
-            display: none;
+            flex-direction: column;
         }
 
         li{
@@ -412,6 +424,9 @@
                 &.active{
                     color: $yellow;
                 }
+            }
+            @media only screen and (max-width: 790px){
+                height: 25px;
             }
             
         }

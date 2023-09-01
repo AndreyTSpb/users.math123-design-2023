@@ -2,7 +2,7 @@ header{
     width: 100%;
     //min-height: 209px;
     @media only screen and (max-width: 787px){
-        min-height: 120px;
+        min-height: 70px;
         position: fixed;
         top: 0;
         left: 0;
@@ -12,22 +12,61 @@ header{
     box-shadow: 0px 8px 16px 0 rgba(35, 31, 32, 0.27);
     background: $base-color;
     .header{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        //для компьютера
+        &-desctop{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            @media only screen and (max-width: 787px){
+                display: none;
+            }
+        }
 
-        @media only screen and (max-width: 787px){
-            grid-template-columns: auto;
-            padding-top: 15px;
-            padding-left: 25px;
-            padding-right: 25px;
+        //для телефона
+        &-mobile{
+            display: none;
+            @media only screen and (max-width: 787px){
+                display: grid;
+                align-items: center;
+            }
+            &-login{
+                text-align: left;
+                a{
+                    color: #FFF;
+                    font-size: 20px;
+                }
+            }
+            &-phone{
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                a{
+                    display: block;
+                    padding-right: 10px;
+                    color: #FFF;
+                    font-weight: 700;
+                }
+                img{
+                    display: block;
+                    height: 30px;
+                }
+            }
+
+            @media only screen and (max-width: 787px){
+                grid-template-columns: 1fr 1fr 3fr;
+                padding-top: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            @media only screen and (max-width: 576px){
+                grid-template-columns: 1fr 1fr 3fr;
+                padding-left: 5px;
+                padding-right: 15px;
+            }
         }
-        @media only screen and (max-width: 576px){
-            grid-template-columns: auto;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
+
+
         &-left{
             &-phone{
                 margin: 0 auto;
@@ -76,6 +115,7 @@ header{
             @media only screen and (max-width: 787px){
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
             &-logo{
                 img{
@@ -85,7 +125,7 @@ header{
                 @media only screen and (max-width: 787px){
                     margin-left: 25px;
                     img{
-                        display: none;
+                        height: 30px;
                     }
                 }
                 @media only screen and (max-width: 576px){
@@ -185,7 +225,7 @@ header{
                     div{
                         margin-top: 5px;
                         margin-bottom: 5px;
-                        background: $yellow;
+                        background: #FFF;
                         width: 100%;
                         height: 8px;
                     }
@@ -212,7 +252,7 @@ header{
                     div{
                         margin-top: 4px;
                         margin-bottom: 4px;
-                        background: $yellow;
+                        background: #FFF;
                         width: 100%;
                         height: 6px;
                     }
@@ -250,12 +290,12 @@ header{
                 padding-top: 25px;
                 box-shadow: 0.2px 2px 6px 0 rgba(0, 0, 0, 0.72);
                 h6{
-                    font-family: 'Roboto';
+                    font-family: 'Panton';
                     font-size: 13px;
                     font-weight: bold !important;
                     text-transform: capitalize !important;
                     a{
-                        font-family: 'Roboto';
+                        font-family: 'Panton';
                         font-size: 9.5px;
                         text-decoration: none;
                     }
@@ -325,7 +365,7 @@ header{
                 a{
                     color: #ffffff;
                     &:hover{
-                        color: $yellow;
+                        color: #ffffff;
                     }
                 }
             }
