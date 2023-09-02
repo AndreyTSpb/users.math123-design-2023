@@ -60,6 +60,9 @@
     color: #58595b !important;
 }
 
+body{
+    padding-bottom: 120px;
+}
 
 section:not(.slider){
     margin-top: 45px;
@@ -126,3 +129,4 @@ section:not(.slider){
 @import 'blocks/homework';
 @import 'blocks/lk';
 @import 'blocks/reg';
+@import 'blocks/question';

@@ -1,0 +1,42 @@
+
+.test-questions-users{
+    .select-studs{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    small{
+        border: solid 6px $base-green;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+        padding: 20px 20px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+        ul{
+            margin-left: 20px;
+        }
+    }
+    fieldset{
+        border: solid 6px $base-green;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+    #test-questions-users-body{
+        
+        .form-check{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .form-check-input{
+                box-shadow: none;
+                margin-left: 1rem;
+                height: 25px;
+            }
+        }
+    }
+}

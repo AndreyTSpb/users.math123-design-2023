@@ -1,5 +1,10 @@
 .footer{
+    /* Позиционируем footer внизу main */
+    position: absolute;
+    bottom: 0;
+    /* Высота footer */
     width: 100%;
+
     //min-height: 100vh;
     padding: 10px 16px 10px 16px;
     background: $base-color;
