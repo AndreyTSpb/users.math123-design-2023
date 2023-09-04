@@ -1,0 +1,19 @@
+#formAskYouKnow{
+    .form-check{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .form-check-input{
+            box-shadow: none;
+            //margin-left: 1rem;
+            height: 25px;
+            width: 25px;
+        }
+        .form-check-label{
+            width: 100%;
+            text-align: left;
+            margin-left: 10px;
+        }
+    }
+}

@@ -831,6 +831,70 @@
                     </div>            
                 </div>
             </div>
+
+            <div class="modal fade" id="popUpAskYouKnow" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered w-50">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                          Уважаемые родители!
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                          <div class="col-12">
+                              <p>Мы всегда стараемся улучшать наш Центр, поэтому просим Вас ответить, как Вы узнали о нас:</p>
+                          </div>
+                          <div class="col-12">
+                              <form id="formAskYouKnow" method="post" class="mini_form" action="'.DOCUMENT_ROOT.'/lk/post_update_ask_you_know">
+                                  <div class="form-check mb-3">
+                                        <input class="form-check-input form-control-sm" type="radio" name="ask" id="ask1" value="1">
+                                        <label class="form-check-label" for="ask1">
+                                          От друзей, знакомых
+                                        </label>
+                                  </div>
+                              
+                                  <div class="form-check mb-3">
+                                    <input class="form-check-input form-control-sm" type="radio" name="ask" id="ask2" value="2">
+                                    <label class="form-check-label" for="ask2">
+                                      Листовки, баннеры
+                                    </label>
+                                  </div>
+                                  <div class="form-check mb-3">
+                                    <input class="form-check-input form-control-sm" type="radio" name="ask" id="ask3" value="3">
+                                    <label class="form-check-label" for="ask3">
+                                      Группа Вконтакте https://vk.com/math123
+                                    </label>
+                                  </div>
+                                  <div class="form-check mb-3">
+                                    <input class="form-check-input form-control-sm" type="radio" name="ask" id="ask4" value="4">
+                                    <label class="form-check-label" for="ask4">
+                                      Телеграмм канал https://t.me/math123ru
+                                    </label>
+                                  </div>
+                                  <div class="form-check ">
+                                    <input class="form-check-input form-control-sm other" type="radio" name="ask" id="ask5" value="5">
+                                    <label class="form-check-label" for="ask5">
+                                      Другое
+                                    </label>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="textAreaOther">Укажите откуда вы узнали о нас:</label>
+                                      <textarea class="form-control" id="textAreaOther" rows="3" name="other" disabled></textarea>
+                                  </div>
+                                  <input type="hidden" name = "url" value = "'.$_SERVER['REQUEST_URI'].'">
+                                  <input type="hidden" name="id_user" value="'.$id_user.'">
+                                  <input class = "btn btn-green" type="submit" value="Отправить" name="add_ask_you_know">
+                              </form>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
         </div>
     </section>
 
